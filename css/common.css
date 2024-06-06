@@ -13,7 +13,7 @@ body {
   line-height: 1.5;
 
 }
-
+/* Task 1 */
 #categories{
   padding: 24px;
   width: 440px;
@@ -65,6 +65,8 @@ background: #fff;
 margin-bottom: 8px;
 }
 
+/* Task 2 */
+
 .gallery{
 padding: 100px 0;
 display: flex;
@@ -80,4 +82,35 @@ height: 300px;
 width: 360px; 
 object-fit: cover;
 border-radius: 4px;
+}
+
+/* Task 3 */
+div{
+  border-radius: 8px;
+    padding: 24px;
+    width: 408px;
+    height: 136px;
+    background: #fff;
+}
+#name-input{
+  border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    padding:8px 140px 8px 16px;
+    margin-bottom: 16px;
+}
+
+h1{
+font-weight: 600;
+font-size: 24px;
+line-height: 133%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+margin: 0;
 }
