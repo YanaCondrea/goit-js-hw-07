@@ -2,6 +2,7 @@ const inputName = document.querySelector('#name-input');
 const outputName = document.querySelector('#name-output');
 const body = document.querySelector("body");
 const div = document.createElement('div');
+div.className += 'container-name';
 div.appendChild(inputName);
 div.appendChild(outputName.parentElement);
 const p = document.querySelector('p');
