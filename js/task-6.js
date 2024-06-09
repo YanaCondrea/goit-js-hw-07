@@ -10,21 +10,26 @@ divContainer.appendChild(boxes);
 const p = document.querySelector('p');
 p.insertAdjacentElement('afterend', divContainer);
 buttonCreate.addEventListener('click', createBoxes);
-buttonDestroy .addEventListener('click', destroyBoxes);
+buttonDestroy.addEventListener('click', destroyBoxes);
 function createBoxes(amount) {
+  const arrayBoxes = [];
   amount = parseInt(input.value);
   for (let i = 1; i <= amount; i += 1) {
-    if ([i] >= 1 && [i] <=100) {
+    if (amount >= 1 && amount <=100) {
      const box = document.createElement('div')
         const size = 20 + i * 10;
        box.style.width = `${size}px`;
       box.style.height = `${size}px`;
-      
        box.style.backgroundColor = getRandomHexColor();
-       boxes.appendChild(box); 
+      boxes.appendChild(box); 
+      arrayBoxes.push(box);
+
     }
+    
     input.value = ''; 
   } 
+
+  
 }
 function destroyBoxes() {
   boxes.innerHTML = '';
