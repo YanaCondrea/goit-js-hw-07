@@ -13,6 +13,7 @@ buttonCreate.addEventListener('click', createBoxes);
 buttonDestroy.addEventListener('click', destroyBoxes);
 function createBoxes(amount) {
   const arrayBoxes = [];
+  boxes.innerHTML = '';
   amount = parseInt(input.value);
   for (let i = 1; i <= amount; i += 1) {
     if (amount >= 1 && amount <=100) {
@@ -25,11 +26,9 @@ function createBoxes(amount) {
       arrayBoxes.push(box);
 
     }
-    
     input.value = ''; 
-  } 
-
-  
+  }  
+  console.log(arrayBoxes);
 }
 function destroyBoxes() {
   boxes.innerHTML = '';
